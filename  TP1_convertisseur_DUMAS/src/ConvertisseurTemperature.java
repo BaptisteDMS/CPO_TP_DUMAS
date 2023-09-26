@@ -36,7 +36,7 @@ public class ConvertisseurTemperature {
                     break;
                 case 5:
                     fahrenheit = KelvinVersFahrenheit(tempCelsius);
-                    System.out.println(tempCelsius + " degre Kelvin est egal a " + fahrenheit + " degres Fahrenheit.");
+                    System.out.println(tempCelsius + " degre Kelvin est egal a " + fahrenheit + " degrs Fahrenheit.");
                     break;
                 case 6:
                     kelvin = FahrenheitVersKelvin(tempCelsius);
