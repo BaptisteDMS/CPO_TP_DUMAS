@@ -1,15 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tp1_stats_dumas;
 
 import java.util.Random;
 import java.util.Scanner;
-
-
 
 /**
  *
  * @author bapti
  */
 public class TP1_stats_DUMAS {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] tableauFacesDe = new int[6]; // Crée un tableau de 6 entiers initialisés à 0
 
@@ -26,9 +29,11 @@ public class TP1_stats_DUMAS {
             tableauFacesDe[resultatLancer]++;
         }
 
-        // Affiche les résultats
+        // Affiche les résultats sous forme de pourcentages
+        System.out.println("Résultats sous forme de pourcentages :");
         for (int i = 0; i < 6; i++) {
-            System.out.println("Face " + i + ": " + tableauFacesDe[i] + " occurrences");
+            double pourcentage = (double) tableauFacesDe[i] / m * 100.0;
+            System.out.println("Face " + (i + 1) + ": " + pourcentage + "%");
         }
     }
 }
