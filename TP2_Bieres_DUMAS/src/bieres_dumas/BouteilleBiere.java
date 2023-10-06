@@ -2,7 +2,7 @@ package bieres_dumas;
 
 /**
  *
- * @author bapti
+ * @author baptiste
  */
 public class BouteilleBiere {
     private final String nom;
