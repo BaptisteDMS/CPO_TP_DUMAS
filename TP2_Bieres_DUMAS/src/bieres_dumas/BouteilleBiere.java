@@ -6,11 +6,11 @@ package bieres_dumas;
  */
 public class BouteilleBiere {
     private final String nom;
-    private final double degreAlcool;
+    private final float degreAlcool;
     private final String brasserie;
     private boolean ouverte;
 
-    public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
+    public BouteilleBiere(String unNom, float unDegre, String uneBrasserie) {
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
