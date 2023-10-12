@@ -9,35 +9,40 @@ public class Convertisseur {
         nbConversions = 0;
     }
 
-    // Méthode pour convertir de Celsius en Fahrenheit
-    public float celsiusVersFahrenheit(float temperatureCelsius) {
-        nbConversions++; // Incrémente le compteur de conversions
+    public double celsiusVersFahrenheit(double temperatureCelsius) {
+        nbConversions++;
         return (temperatureCelsius * 9 / 5) + 32;
     }
 
-    // Méthode pour convertir de Fahrenheit en Celsius
-
-    public double fahrenheitVersCelsius(float temperatureFahrenheit) {
-        nbConversions++; // Incrémente le compteur de conversions
+    public double fahrenheitVersCelsius(double temperatureFahrenheit) {
+        nbConversions++;
         return (temperatureFahrenheit - 32) * 5 / 9;
     }
-    
-    public double CelciusVersKelvin(float temperatureCelcius) {
+
+    public double CelciusVersKelvin(double temperatureCelsius) {
         nbConversions++;
-        return (temperatureCelcius + 273.15);
-    }
-    
-    public double KelvinVersCelcius(float temperatureKelvin) {
-        nbConversion++;
-        return (temperatureKlevin - 273,15);
+        return (temperatureCelsius + 273.15);
     }
 
-    public double 
-        
-    // Méthode pour afficher le nombre de conversions
+    public double KelvinVersCelcius(double temperatureKelvin) {
+        nbConversions++;
+        return (temperatureKelvin - 273.15);
+    }
+
+    public double KelvinVersFahrenheit(double temperatureKelvin) {
+        nbConversions++;
+        double celsius = KelvinVersCelcius(temperatureKelvin);
+        return celsiusVersFahrenheit(celsius);
+    }
+
+    public double FahrenheitVersKelvin(double temperatureFahrenheit) {
+        nbConversions++;
+        double celsius = fahrenheitVersCelsius(temperatureFahrenheit);
+        return CelciusVersKelvin(celsius);
+    }
+
     @Override
     public String toString() {
         return "Nombre de conversions effectuées : " + nbConversions;
     }
-    
 }
