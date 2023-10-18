@@ -1,9 +1,13 @@
 package tp3_heroic_fantasy_dumas;
+
+import java.util.ArrayList;
+
 /**
  *
  * @author baptiste
  */
 public class TP3_Heroic_Fantasy_DUMAS {
+import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Arme> armes = new ArrayList<Arme>();
@@ -18,11 +22,11 @@ public class Main {
         armes.add(baton1);
         armes.add(baton2);
 
-        // Affichez les caractéristiques des armes en parcourant le tableau dynamique
-        for (Arme arme : armes) {
-            System.out.println(arme);
+        // Utilisez une boucle for avec des indices pour parcourir les armes
+        for (int i = 0; i < armes.size(); i++) {
+            Arme arme = armes.get(i);
+            System.out.println("Arme #" + (i + 1) + ": " + arme);
         }
     }
 }
 
- 
