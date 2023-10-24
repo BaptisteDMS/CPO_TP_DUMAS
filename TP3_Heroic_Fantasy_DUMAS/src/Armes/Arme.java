@@ -1,10 +1,12 @@
+package Armes;
 /**
  *
  * @author baptiste
  */
+
 public abstract class Arme {
-    private final String nom;
-    private final int niveauAttaque;
+    private String nom;
+    private int niveauAttaque;
 
     public Arme(String nom, int niveauAttaque) {
         this.nom = nom;
@@ -21,8 +23,6 @@ public abstract class Arme {
 
     @Override
     public String toString() {
-        return "Nom de l'arme : " + nom + ", Niveau d'attaque : " + niveauAttaque;
+        return "Nom: " + nom + ", Niveau d'Attaque: " + niveauAttaque;
     }
 }
-
-
