@@ -7,47 +7,31 @@ package lightoff_dumas_version_console;
 public class CelluleLumineuse {
     private boolean etat;
 
-    /**
-     *initialise la cellule 
-     * Éteinte par défaut
-     *
-     */
     public CelluleLumineuse() {
+        // Initialise la cellule en état éteint
         etat = false;
     }
 
-    /**
-     *permet d'inverser l'etat de la cellule 
-     */
     public void activerCellule() {
+        // Inverse l'état de la cellule
         etat = !etat;
     }
 
-    /**
-     *Éteindre la cellule
-     */
     public void eteindreCellule() {
+        // Éteint la cellule
         etat = false;
     }
 
-    /**
-     *permet de verifier si la cellule est eteinte 
-     * @return
-     */
     public boolean estEteint() {
         return !etat;
     }
 
-    /**
-     *renvoie l'etat de la cellule 
-     * @return
-     */
-    public boolean RenvoieEtat() {
+    public boolean getEtat() {
         return etat;
     }
 
     @Override
     public String toString() {
-        return etat ? "X" : "O"; // Représentation de l'état
+        return etat ? "X" : "O";
     }
 }
